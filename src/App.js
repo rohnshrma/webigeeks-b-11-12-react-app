@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Components/Header";
 import "./style.css";
 import Card from "./Components/Card";
+import data from "./data.js";
 
 function App() {
   return (
@@ -13,26 +14,16 @@ function App() {
       </main>
 
       <div className="cards">
-        <Card
-          name="rohan sharma"
-          title="Developer"
-          url="https://www.postergully.com/cdn/shop/products/63767e36be69e2204043233365c0b89f_f9c432f9-f0f9-49f1-8b0d-30b5ebc70dc8.jpg?v=1578647532"
-        />
-        <Card
-          name="Himanshu beniwal"
-          title="Student"
-          url="https://www.postergully.com/cdn/shop/products/d5723026363e2cb8074b7e13547b24e6.jpg?v=1578647900"
-        />
-        <Card
-          name="Himanshu beniwal"
-          title="Student"
-          url="https://www.postergully.com/cdn/shop/products/d5723026363e2cb8074b7e13547b24e6.jpg?v=1578647900"
-        />
-        <Card
-          name="Himanshu beniwal"
-          title="Student"
-          url="https://www.postergully.com/cdn/shop/products/d5723026363e2cb8074b7e13547b24e6.jpg?v=1578647900"
-        />
+        {data.map((dataObj, index) => {
+          return (
+            <Card
+              title={dataObj.title}
+              name={dataObj.name}
+              url={dataObj.url}
+              key={index}
+            />
+          );
+        })}
       </div>
     </div>
   );

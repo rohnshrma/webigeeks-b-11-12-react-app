@@ -14,6 +14,11 @@ const data = [
     name: "Esha",
     title: "Student",
   },
+  {
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNEtWHFx9IkQS6VtgZhe6Unxk7OFWosSyhg&s",
+    name: "Aryan Saini",
+    title: "Student",
+  },
 ];
 
 export default data;
