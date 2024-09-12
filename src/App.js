@@ -3,17 +3,23 @@ import Header from "./Components/Header";
 import "./style.css";
 import Card from "./Components/Card";
 import data from "./data.js";
+import Counter from "./Components/Counter.js";
 
 function App() {
+  console.log("app loaded");
+
   return (
     <div className="App">
       <Header />
-      <main>
+
+      <Counter />
+
+      {/* <main>
         <h1>Hello world this is rohan from earth</h1>
         <p>earth is not a green planet anymore</p>
-      </main>
+      </main> */}
 
-      <div className="cards">
+      {/* <div className="cards">
         {data.map((dataObj, index) => {
           return (
             <Card
@@ -24,7 +30,7 @@ function App() {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }
