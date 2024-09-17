@@ -3,12 +3,34 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, teal 50%, wheat 50%);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 header {
   padding: 1rem;
   background-color: olive;
   color: #fff;
 }
 
+.wrapper {
+  width: 30%;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 .cards {
   display: flex;
   justify-content: space-evenly;

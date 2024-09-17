@@ -4,6 +4,8 @@ import "./style.css";
 import Card from "./Components/Card";
 import data from "./data.js";
 import Counter from "./Components/Counter.js";
+import Time from "./Components/Time.js";
+import Form from "./Components/Form.js";
 
 function App() {
   console.log("app loaded");
@@ -12,7 +14,10 @@ function App() {
     <div className="App">
       <Header />
 
-      <Counter />
+      <Form />
+
+      {/* <Counter /> */}
+      {/* {<Time />} */}
 
       {/* <main>
         <h1>Hello world this is rohan from earth</h1>
