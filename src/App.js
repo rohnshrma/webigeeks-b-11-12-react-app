@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <Header />
 
-      <Form />
+      <Counter />
+
+      {/* <Form /> */}
 
       {/* <Counter /> */}
       {/* {<Time />} */}
